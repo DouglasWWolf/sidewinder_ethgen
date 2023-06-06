@@ -57,6 +57,7 @@ always @(posedge clk) begin
             restart <= 1;
         end
 
+
         case(fsm_state)
 
         0:  if (restart) begin
