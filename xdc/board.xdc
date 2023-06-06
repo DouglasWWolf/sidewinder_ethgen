@@ -43,8 +43,8 @@ set_disable_timing [get_ports led_pci_link_up ]
 
 
 set_property  -dict {PACKAGE_PIN B6 IOSTANDARD LVCMOS33} [get_ports pb_rst_n ]  ;# PB_SW0
-set_property  -dict {PACKAGE_PIN A3 IOSTANDARD LVCMOS33} [get_ports pb_ctrl_0]  ;# PB_SW1
-set_property  -dict {PACKAGE_PIN B3 IOSTANDARD LVCMOS33} [get_ports pb_ctrl_1]  ;# PB_SW2
+#set_property  -dict {PACKAGE_PIN A3 IOSTANDARD LVCMOS33} [get_ports pb_ctrl_0]  ;# PB_SW1
+#set_property  -dict {PACKAGE_PIN B3 IOSTANDARD LVCMOS33} [get_ports pb_ctrl_1]  ;# PB_SW2
 
 
 #set_property  PACKAGE_PIN  B5    [get_ports {  led[0]                    }]
