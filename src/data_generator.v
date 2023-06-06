@@ -32,7 +32,7 @@ reg[63:0] counter;
 reg[63:0] packets_remaining;
 reg       restart;
 
-wire eop = (counter[1:0] == 2'b11);
+wire eop = (counter[3:0] == 2'b1111);
 
 assign AXIS_TX_TDATA[0   +: 64] = counter;
 assign AXIS_TX_TDATA[64  +: 64] = packet_num;
