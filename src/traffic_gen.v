@@ -16,6 +16,8 @@ module traffic_gen
 
     output reg[63:0] ch0_count, ch1_count,
 
+    output reg[7:0] packet_length,
+
     output reg ch0_start, ch1_start,
 
     //================== This is an AXI4-Lite slave interface ==================
@@ -122,6 +124,7 @@ module traffic_gen
                         ch0_start    <= ashi_wdata[0];
                         ch1_start    <= ashi_wdata[1];
                     end
+                5:  packet_length    <= ashi_wdata;
 
                 // Writes to any other register are a decode-error
                 default: ashi_wresp <= DECERR;
@@ -155,6 +158,7 @@ module traffic_gen
                 1: ashi_rdata <= ch0_count[31:00];
                 2: ashi_rdata <= ch1_count[63:32];
                 3: ashi_rdata <= ch1_count[31:00];
+                4: ashi_rdata <= packet_length;
 
                 // Reads of any other register are a decode-error
                 default: ashi_rresp <= DECERR;

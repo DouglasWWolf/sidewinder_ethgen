@@ -39,7 +39,7 @@
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
     <Object name="design_1_i/qsfp_data/rx_data_ila/inst/net_slot_0_axis_tvalid" gui_info="Trigger Setup=0"/>
-    <Object name="design_1_i/qsfp_data/tx_data_ila/inst/net_slot_0_axis_tvalid" gui_info=""/>
+    <Object name="design_1_i/qsfp_data/tx_data_ila/inst/net_slot_0_axis_tvalid" gui_info="Trigger Setup=0"/>
     <Object name="design_1_i/qsfp_data/tx_data_ila/inst/probe0_1" gui_info="Trigger Setup=0"/>
   </ObjectList>
   <probeset name="hw project" active="false">
@@ -53,9 +53,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe0[511:0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe4[511:0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : ch0_ethernet_axis_rx : TDATA"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -585,9 +585,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe1[63:0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe5[63:0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : ch0_ethernet_axis_rx : TKEEP"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -669,9 +669,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe4[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe8[0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : ch0_ethernet_axis_rx : TLAST"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -690,9 +690,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe2[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe6[0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : ch0_ethernet_axis_rx : TUSER"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -711,9 +711,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe3[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : ch0_ethernet_axis_rx : TVALID"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -732,9 +732,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe5[511:0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe9[511:0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_1 : ch1_ethernet_axis_rx : TDATA"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -1264,9 +1264,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe6[63:0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe10[63:0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_1 : ch1_ethernet_axis_rx : TKEEP"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -1348,9 +1348,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe9[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe13[0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_1 : ch1_ethernet_axis_rx : TLAST"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -1369,9 +1369,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe7[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe11[0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_1 : ch1_ethernet_axis_rx : TUSER"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -1390,9 +1390,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe8[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="MAP" value="probe12[0]"/>
+        <Option Id="NAME.CUSTOM" value="slot_1 : ch1_ethernet_axis_rx : TVALID"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -1402,6 +1402,214 @@
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="cycle_id_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[31]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[30]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[29]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[28]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[27]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[26]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[25]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[24]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[23]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[22]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[21]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[20]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[19]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[18]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[17]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[16]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[15]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[14]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[13]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[12]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[11]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[10]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[9]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[8]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[7]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[6]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[5]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[4]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[3]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[2]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[1]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe0_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="packet_id_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[31]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[30]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[29]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[28]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[27]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[26]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[25]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[24]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[23]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[22]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[21]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[20]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[19]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[18]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[17]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[16]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[15]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[14]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[13]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[12]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[11]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[10]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[9]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[8]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[7]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[6]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[5]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[4]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[3]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[2]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[1]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe1_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="cycle_id_2"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[31]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[30]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[29]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[28]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[27]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[26]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[25]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[24]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[23]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[22]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[21]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[20]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[19]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[18]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[17]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[16]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[15]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[14]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[13]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[12]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[11]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[10]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[9]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[8]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[7]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[6]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[5]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[4]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[3]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[2]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[1]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe2_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="packet_id_2"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[31]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[30]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[29]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[28]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[27]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[26]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[25]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[24]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[23]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[22]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[21]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[20]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[19]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[18]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[17]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[16]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[15]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[14]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[13]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[12]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[11]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[10]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[9]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[8]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[7]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[6]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[5]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[4]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[3]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[2]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[1]"/>
+        <net name="design_1_i/qsfp_data/rx_data_ila/inst/probe3_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
@@ -1933,7 +2141,7 @@
         <net name="design_1_i/qsfp_data/rx_ila/inst/net_slot_0_axis_tdata[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
@@ -2080,7 +2288,7 @@
         <net name="design_1_i/qsfp_data/rx_ila/inst/net_slot_0_axis_tvalid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
@@ -2612,7 +2820,7 @@
         <net name="design_1_i/qsfp_data/rx_ila/inst/net_slot_1_axis_tdata[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq64&apos;hXXXX_XXXX_XXXX_XXXX"/>
@@ -2759,7 +2967,7 @@
         <net name="design_1_i/qsfp_data/rx_ila/inst/net_slot_1_axis_tvalid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -2811,7 +3019,7 @@
         <net name="design_1_i/qsfp_data/rx_ila/inst/probe0_1[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -2863,7 +3071,7 @@
         <net name="design_1_i/qsfp_data/rx_ila/inst/probe1_1[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -2915,7 +3123,7 @@
         <net name="design_1_i/qsfp_data/rx_ila/inst/probe2_1[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -2978,8 +3186,8 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe0[511:0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : QSFP_TX0_STREAM_1 : TDATA"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -3510,8 +3718,8 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe3[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : QSFP_TX0_STREAM_1 : TLAST"/>
-        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -3544,7 +3752,7 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -3555,7 +3763,7 @@
         <Option Id="NAME.CUSTOM" value="slot_0 : QSFP_TX0_STREAM_1 : TVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -3573,8 +3781,8 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe4[511:0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="slot_1 : Conn2 : TDATA"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -4105,8 +4313,8 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe7[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="slot_1 : Conn2 : TLAST"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -4126,8 +4334,8 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe6[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_1 : Conn2 : TREADY"/>
-        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
