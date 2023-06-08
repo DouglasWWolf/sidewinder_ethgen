@@ -26,33 +26,33 @@ preplace inst qsfp_status -pg 1 -lvl 2 -x 810 -y 550 -swap {0 1 2 3 4 5 6 7 8 9 
 preplace inst tx_data_ila -pg 1 -lvl 1 -x 280 -y 280 -defaultsOSRD -pinDir SLOT_0_AXIS left -pinY SLOT_0_AXIS 0L -pinDir SLOT_1_AXIS left -pinY SLOT_1_AXIS 20L -pinDir clk left -pinY clk 40L -pinDir resetn left -pinY resetn 60L
 preplace inst data_consumer_0 -pg 1 -lvl 2 -x 810 -y 220 -defaultsOSRD -pinDir AXIS_RX left -pinY AXIS_RX 0L -pinDir clk left -pinY clk 20L -pinDir resetn left -pinY resetn 40L -pinBusDir packet_id right -pinBusY packet_id 0R -pinBusDir cycle_id right -pinBusY cycle_id 20R
 preplace inst data_consumer_1 -pg 1 -lvl 2 -x 810 -y 360 -defaultsOSRD -pinDir AXIS_RX left -pinY AXIS_RX 0L -pinDir clk left -pinY clk 20L -pinDir resetn left -pinY resetn 40L -pinBusDir packet_id right -pinBusY packet_id 0R -pinBusDir cycle_id right -pinBusY cycle_id 20R
-preplace inst rx_data_ila -pg 1 -lvl 2 -x 810 -y 60 -swap {0 1 2 3 4 5 6 7 8 9 10 11 13 12 16 17 14 15} -defaultsOSRD -pinDir SLOT_0_AXIS left -pinY SLOT_0_AXIS 0L -pinDir SLOT_1_AXIS left -pinY SLOT_1_AXIS 20L -pinDir clk left -pinY clk 60L -pinDir resetn left -pinY resetn 40L -pinBusDir probe0 right -pinBusY probe0 40R -pinBusDir probe1 right -pinBusY probe1 60R -pinBusDir probe2 right -pinBusY probe2 0R -pinBusDir probe3 right -pinBusY probe3 20R
+preplace inst rx_data_ila -pg 1 -lvl 2 -x 810 -y 60 -swap {0 1 2 3 4 5 6 7 8 9 10 11 17 15 16 13 14 12} -defaultsOSRD -pinDir SLOT_0_AXIS left -pinY SLOT_0_AXIS 0L -pinDir SLOT_1_AXIS left -pinY SLOT_1_AXIS 20L -pinDir clk left -pinY clk 60L -pinBusDir probe0 right -pinBusY probe0 40R -pinBusDir probe1 right -pinBusY probe1 60R -pinBusDir probe2 right -pinBusY probe2 0R -pinBusDir probe3 right -pinBusY probe3 20R -pinDir resetn left -pinY resetn 40L
 preplace netloc aclk_1 1 0 2 60 590 NJ
-preplace netloc aresetn_1 1 0 2 80 820 640J
-preplace netloc aurora_64b66b_0_channel_up 1 1 2 540 730 NJ
-preplace netloc aurora_core_1_channel_up 1 1 2 620 750 NJ
+preplace netloc aresetn_1 1 0 2 80 820 620J
+preplace netloc aurora_64b66b_0_channel_up 1 1 2 520 730 NJ
+preplace netloc aurora_core_1_channel_up 1 1 2 600 750 NJ
 preplace netloc clock_1 1 0 1 40 480n
-preplace netloc qsfp0_ethernet_gt_rxusrclk2 1 1 1 520 120n
+preplace netloc cycle_id_1 1 2 1 980 100n
+preplace netloc cycle_id_2 1 2 1 1020 60n
+preplace netloc packet_id_1 1 2 1 960 120n
+preplace netloc packet_id_2 1 2 1 1000 80n
+preplace netloc qsfp0_ethernet_gt_rxusrclk2 1 1 1 500 120n
 preplace netloc reset_in_1 1 0 1 20 500n
-preplace netloc reset_inverter_1_Res 1 1 1 500 100n
-preplace netloc cycle_id_1 1 2 1 990 100n
-preplace netloc packet_id_1 1 2 1 970 120n
-preplace netloc cycle_id_2 1 2 1 1030 60n
-preplace netloc packet_id_2 1 2 1 1010 80n
+preplace netloc reset_inverter_1_Res 1 1 1 480 100n
 preplace netloc Conn2 1 0 1 100 300n
-preplace netloc Conn5 1 1 2 580J 490 NJ
-preplace netloc Conn6 1 0 2 NJ 800 600J
+preplace netloc Conn5 1 1 2 560J 490 NJ
+preplace netloc Conn6 1 0 2 NJ 800 580J
 preplace netloc Conn7 1 1 2 NJ 460 NJ
 preplace netloc QSFP_TX0_STREAM_1 1 0 1 120 280n
-preplace netloc qsfp0_clk_1 1 1 2 560J 690 NJ
+preplace netloc ch0_ethernet_axis_rx 1 1 1 440 60n
+preplace netloc ch1_ethernet_axis_rx 1 1 1 460 80n
+preplace netloc qsfp0_clk_1 1 1 2 540J 690 NJ
 preplace netloc qsfp1_clk_1 1 1 2 NJ 710 NJ
-preplace netloc ch0_ethernet_axis_rx 1 1 1 460 60n
-preplace netloc ch1_ethernet_axis_rx 1 1 1 480 80n
 levelinfo -pg 1 0 280 810 1050
 pagesize -pg 1 -db -bbox -sgen -190 0 1230 830
 ",
    "No Loops_ScaleFactor":"0.912048",
-   "No Loops_TopLeft":"-405,0",
+   "No Loops_TopLeft":"-406,0",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port qsfp0_clk -pg 1 -lvl 0 -x -360 -y 150 -defaultsOSRD
